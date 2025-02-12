@@ -1,4 +1,5 @@
 <?php
+include "auth.php";
 include "db.php";
 
 $result = $conn->query("SELECT * FROM employees");
@@ -15,6 +16,7 @@ $result = $conn->query("SELECT * FROM employees");
     <h2>Employee List</h2>
     <a href="create.php">Add Employee</a>
 
+    <a href="logout.php">Logout</a>
     <table>
         <thead>
             <tr>
